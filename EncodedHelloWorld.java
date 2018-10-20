@@ -1,15 +1,18 @@
 public class EncodedHelloWorld {
     static String  encodedMessage(){
-        String w1 = Character.toString((char)('A'+7))+
-                    Character.toString((char)('a'+4))+
-                    Character.toString((char)('a'+11))+
-                    Character.toString((char)('a'+11))+
-                    Character.toString((char)('a'+14));
-        String w2 = Character.toString((char)('A'+22))+
-                    Character.toString((char)('a'+14))+
-                    Character.toString((char)('a'+17))+
-                    Character.toString((char)('a'+11))+
-                    Character.toString((char)('a'+3));
+      StringBuilder w1 = new StringBuilder("");
+         w1.append( Character.toString((char)('A'+7)));
+         w1.append(Character.toString((char)('a'+4)));
+         w1.append(Character.toString((char)('a'+11)));
+         w1.append(Character.toString((char)('a'+11)));
+         w1.append(Character.toString((char)('a'+14)));
+         
+        StringBuilder w2 = new StringBuilder(""); 
+        w2.append(Character.toString((char)('A'+22)));
+         w2.append(Character.toString((char)('a'+14)));
+        w2.append(Character.toString((char)('a'+17)));
+        w2.append(Character.toString((char)('a'+11)));
+        w2.append(Character.toString((char)('a'+3)));
         return w1 +" "+ w2;
     }
     public static void main (String args []){
